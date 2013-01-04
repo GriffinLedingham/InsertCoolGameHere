@@ -1,30 +1,36 @@
-﻿<xapCache source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Bin\x86\Debug\Felicitas_Debug_x86.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="1/3/2013 8:05:49 PM">
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\obj\x86\Debug\Felicitas.dll" archivePath="Felicitas.dll" lastWriteTime="1/3/2013 8:05:46 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="1/3/2013 7:47:11 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="1/3/2013 7:47:11 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="1/3/2013 7:47:11 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="1/3/2013 7:47:11 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="1/3/2013 7:47:11 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Bin\x86\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="1/3/2013 7:59:24 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Bin\x86\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="1/3/2013 7:47:11 PM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Bin\x86\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="1/3/2013 7:47:11 PM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Direct3D11.dll" archivePath="SharpDX.Direct3D11.dll" lastWriteTime="11/20/2012 6:51:28 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.dll" archivePath="SharpDX.dll" lastWriteTime="11/20/2012 6:51:25 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.DXGI.dll" archivePath="SharpDX.DXGI.dll" lastWriteTime="11/20/2012 6:51:26 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.MediaFoundation.dll" archivePath="SharpDX.MediaFoundation.dll" lastWriteTime="11/20/2012 6:51:33 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Toolkit.dll" archivePath="SharpDX.Toolkit.dll" lastWriteTime="11/20/2012 6:51:29 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Toolkit.Game.dll" archivePath="SharpDX.Toolkit.Game.dll" lastWriteTime="11/20/2012 6:51:42 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Toolkit.Graphics.dll" archivePath="SharpDX.Toolkit.Graphics.dll" lastWriteTime="11/20/2012 6:51:31 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.XAudio2.dll" archivePath="SharpDX.XAudio2.dll" lastWriteTime="11/20/2012 6:51:32 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.WP8.winmd" archivePath="SharpDX.WP8.winmd" lastWriteTime="11/20/2012 6:51:21 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.xml" archivePath="SharpDX.xml" lastWriteTime="11/20/2012 6:51:24 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Direct3D11.xml" archivePath="SharpDX.Direct3D11.xml" lastWriteTime="11/20/2012 6:51:27 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.DXGI.xml" archivePath="SharpDX.DXGI.xml" lastWriteTime="11/20/2012 6:51:25 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.MediaFoundation.xml" archivePath="SharpDX.MediaFoundation.xml" lastWriteTime="11/20/2012 6:51:32 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Toolkit.xml" archivePath="SharpDX.Toolkit.xml" lastWriteTime="11/20/2012 6:51:28 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Toolkit.Game.xml" archivePath="SharpDX.Toolkit.Game.xml" lastWriteTime="11/20/2012 6:51:42 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.Toolkit.Graphics.xml" archivePath="SharpDX.Toolkit.Graphics.xml" lastWriteTime="11/20/2012 6:51:30 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.XAudio2.xml" archivePath="SharpDX.XAudio2.xml" lastWriteTime="11/20/2012 6:51:31 AM" />
-  <file source="C:\Users\paul\Documents\Visual Studio 2012\SharpDX\Bin\Standard-wp8-x86\SharpDX.WP8.dll" archivePath="SharpDX.WP8.dll" lastWriteTime="11/20/2012 6:51:22 AM" />
-  <file source="C:\Users\paul\Documents\cSharp\Apps\Felicitas\Felicitas\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="1/3/2013 7:59:25 PM" />
+﻿<xapCache source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Felicitas_Debug_x86.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2013-01-04 3:25:46 PM">
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\obj\x86\Debug\Felicitas.dll" archivePath="Felicitas.dll" lastWriteTime="2013-01-04 3:25:45 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2013-01-04 1:55:31 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Direct3D11.dll" archivePath="SharpDX.Direct3D11.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.dll" archivePath="SharpDX.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.DXGI.dll" archivePath="SharpDX.DXGI.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.MediaFoundation.dll" archivePath="SharpDX.MediaFoundation.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Toolkit.dll" archivePath="SharpDX.Toolkit.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Toolkit.Game.dll" archivePath="SharpDX.Toolkit.Game.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Toolkit.Graphics.dll" archivePath="SharpDX.Toolkit.Graphics.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.XAudio2.dll" archivePath="SharpDX.XAudio2.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.WP8.winmd" archivePath="SharpDX.WP8.winmd" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.xml" archivePath="SharpDX.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Direct3D11.xml" archivePath="SharpDX.Direct3D11.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.DXGI.xml" archivePath="SharpDX.DXGI.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.MediaFoundation.xml" archivePath="SharpDX.MediaFoundation.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Toolkit.xml" archivePath="SharpDX.Toolkit.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Toolkit.Game.xml" archivePath="SharpDX.Toolkit.Game.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.Toolkit.Graphics.xml" archivePath="SharpDX.Toolkit.Graphics.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.XAudio2.xml" archivePath="SharpDX.XAudio2.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\SharpDX.WP8.dll" archivePath="SharpDX.WP8.dll" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="2013-01-04 1:54:00 PM" />
+  <file source="C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2013-01-04 1:54:00 PM" />
 </xapCache>

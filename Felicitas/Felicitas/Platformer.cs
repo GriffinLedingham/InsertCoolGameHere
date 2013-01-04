@@ -11,7 +11,7 @@ namespace Felicitas {
     class Platformer : Game {
 
         public GraphicsDeviceManager graphicsDeviceManager;
-        public SpriteBatch spriteBatch;
+        public static SpriteBatch spriteBatch;
 
 
 
