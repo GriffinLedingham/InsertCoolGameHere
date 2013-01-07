@@ -19,6 +19,7 @@ namespace Felicitas {
 
         public GraphicsDeviceManager graphicsDeviceManager;
         public static SpriteBatch spriteBatch;
+        
 
         public Platformer()
         {
@@ -49,8 +50,7 @@ namespace Felicitas {
 
         protected override void Draw(GameTime gameTime)
         {
-
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Green);
 
             base.Draw(gameTime);
         }

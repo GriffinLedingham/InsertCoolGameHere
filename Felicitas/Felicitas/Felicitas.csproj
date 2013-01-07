@@ -122,7 +122,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Content\basicTile.dds" />
+    <Content Include="Content\basicTile.dds">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">
       <SubType>Designer</SubType>
