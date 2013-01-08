@@ -17,7 +17,7 @@ namespace Felicitas
 
         public override void Draw()
         {
- 	        base.Draw();
+ 	       
         }
 
         public override bool CheckCollision(Player player)

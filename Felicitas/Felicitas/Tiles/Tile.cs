@@ -28,7 +28,9 @@ namespace Felicitas
 
         public virtual void Draw()
         {
-            throw new Exception("Implement draw");
+            Platformer.spriteBatch.Begin();
+            Platformer.spriteBatch.Draw(SpriteTexture, new Vector2(Width, Height) * Pos, Color.White);
+            Platformer.spriteBatch.End();
         }
 
         public virtual bool CheckCollision(Player player)

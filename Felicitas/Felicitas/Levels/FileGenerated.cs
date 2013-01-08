@@ -35,8 +35,6 @@ namespace Felicitas
                 {
                     Tiles[curRow, curCol] = GetTile(line[curCol],curCol,curRow);
                 }
-
-
                 curRow++;
             }
 
@@ -47,7 +45,7 @@ namespace Felicitas
             switch (c)
             {
                 case '0': return new BlankTile(curCol, curRow, null);
-                default: return new BasicTile(curCol, curRow, null);
+                default: return new BasicTile(curCol, curRow, Platformer.BasicTileTexture);
             }
         }
 

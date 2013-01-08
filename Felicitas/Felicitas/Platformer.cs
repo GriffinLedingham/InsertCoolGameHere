@@ -8,12 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Felicitas {
-    class Platformer : Game {
+    class Platformer : Game
+    {
+
+        #region TileTexture
+
+        public static Texture2D BasicTileTexture;
+
+        #endregion
 
         public GraphicsDeviceManager graphicsDeviceManager;
         public static SpriteBatch spriteBatch;
-
-
 
         public Platformer()
         {
@@ -27,7 +32,7 @@ namespace Felicitas {
         {
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            BasicTileTexture = Content.Load<Texture2D>("basicTile.dds");
             base.LoadContent();
         }
 
