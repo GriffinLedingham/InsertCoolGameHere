@@ -15,6 +15,8 @@ namespace Felicitas {
 
         public static Texture2D BasicTileTexture;
 
+        public static Texture2D PlayerTexture;
+
         #endregion
 
         public GraphicsDeviceManager graphicsDeviceManager;
@@ -44,8 +46,9 @@ namespace Felicitas {
         {
             Window.Title = "Felicitas";
             //Load tile Textures here. Loading them in LoadContent was causing incorrect behavior, and the textures were not loading properly.
-            #region TileTextureInitialize
+            #region TextureInitialize
             BasicTileTexture = Content.Load<Texture2D>("basicTile.dds");
+            PlayerTexture = Content.Load<Texture2D>("player.dds");
             #endregion
             currentLevel = new FileGenerated();
             currentLevel.Generate("MAP.txt");
