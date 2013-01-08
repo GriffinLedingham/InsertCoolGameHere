@@ -33,7 +33,7 @@ namespace Felicitas {
         {
 
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            BasicTileTexture = Content.Load<Texture2D>("basicTile.dds");
+            
             base.LoadContent();
         }
 
@@ -45,6 +45,7 @@ namespace Felicitas {
         protected override void Initialize()
         {
             Window.Title = "Felicitas";
+            BasicTileTexture = Content.Load<Texture2D>("basicTile.dds");
             currentLevel = new FileGenerated();
             currentLevel.Generate("MAP.txt");
             base.Initialize();
