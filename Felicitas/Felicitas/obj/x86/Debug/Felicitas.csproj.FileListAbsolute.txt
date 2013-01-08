@@ -64,3 +64,4 @@ C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\obj\x86\D
 C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\obj\x86\Debug\Felicitas.pdb
 C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\obj\x86\Debug\XapCacheFile.xml
 C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Content\basicTile.dds
+C:\Users\Griff\Documents\GitHub\InsertCoolGameHere\Felicitas\Felicitas\Bin\x86\Debug\Content\player.dds

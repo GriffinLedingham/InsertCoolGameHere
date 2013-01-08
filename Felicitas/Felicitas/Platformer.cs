@@ -11,7 +11,7 @@ namespace Felicitas {
     class Platformer : Game
     {
 
-        #region TileTexture
+        #region Texture
 
         public static Texture2D BasicTileTexture;
 
