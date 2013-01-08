@@ -56,6 +56,7 @@ namespace Felicitas {
         {
             GraphicsDevice.Clear(Color.Red);
             //Draw whichever level is currently being played.
+            //This will be changed when adding menus, multiple levels, etc..
             currentLevel.Draw();
             base.Draw(gameTime);
         }
