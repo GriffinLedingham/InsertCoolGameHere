@@ -150,6 +150,7 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\basicTile.png" />
     <Content Include="Content\MAP.txt" />
   </ItemGroup>
   <ItemGroup>

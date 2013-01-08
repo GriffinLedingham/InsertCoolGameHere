@@ -21,15 +21,21 @@ namespace Felicitas
         {
             Pos.X = x;
             Pos.Y = y;
-            Width = texture.Width;
-            Height = texture.Height;
+            if (texture != null)
+            {
+                Width = texture.Width;
+                Height = texture.Height;
+            }
             SpriteTexture = texture;
         }
 
         public virtual void Draw()
         {
             Platformer.spriteBatch.Begin();
-            Platformer.spriteBatch.Draw(SpriteTexture, new Vector2(Width, Height) * Pos, Color.White);
+            if (SpriteTexture != null)
+            {
+                Platformer.spriteBatch.Draw(SpriteTexture, new Vector2(Width, Height) * Pos, Color.White);
+            }
             Platformer.spriteBatch.End();
         }
 

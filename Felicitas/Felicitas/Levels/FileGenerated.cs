@@ -15,13 +15,16 @@ namespace Felicitas
 
         public override void Generate(string filename)
         {
-            StreamReader reader = new StreamReader(filename);
+            var resource = System.Windows.Application.GetResourceStream(new Uri(@"Content/"+filename, UriKind.Relative));
+
+            StreamReader reader = new StreamReader(resource.Stream);
             //TODO: Add try parse.
             
             string line = string.Empty;
             line = reader.ReadLine();
             int tempDimension = int.Parse(line);
             Width = tempDimension;
+            line = reader.ReadLine();
             tempDimension = int.Parse(line);
             Height = tempDimension;
 
@@ -33,7 +36,7 @@ namespace Felicitas
             {
                 for (int curCol = 0; curCol < Width; curCol++)
                 {
-                    Tiles[curRow, curCol] = GetTile(line[curCol],curCol,curRow);
+                    Tiles[curCol, curRow] = GetTile(line[curCol],curCol,curRow);
                 }
                 curRow++;
             }

@@ -12,7 +12,7 @@ namespace Felicitas
         public BasicTile(int x, int y, Texture2D texture)
             : base(x, y, texture)
         {
-            
+
         }
 
         public override void Draw()

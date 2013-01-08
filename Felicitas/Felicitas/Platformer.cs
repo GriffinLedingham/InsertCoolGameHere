@@ -19,7 +19,7 @@ namespace Felicitas {
 
         public GraphicsDeviceManager graphicsDeviceManager;
         public static SpriteBatch spriteBatch;
-        
+        public static Level currentLevel;
 
         public Platformer()
         {
@@ -45,13 +45,15 @@ namespace Felicitas {
         protected override void Initialize()
         {
             Window.Title = "Felicitas";
+            currentLevel = new FileGenerated();
+            currentLevel.Generate("MAP.txt");
             base.Initialize();
         }
 
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.Green);
-
+            GraphicsDevice.Clear(Color.Red);
+            currentLevel.Draw();
             base.Draw(gameTime);
         }
 
