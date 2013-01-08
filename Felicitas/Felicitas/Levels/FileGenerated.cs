@@ -15,8 +15,8 @@ namespace Felicitas
 
         public override void Generate(string filename)
         {
+            //Proper way to load non-content, using phone storage to load text file.
             var resource = System.Windows.Application.GetResourceStream(new Uri(@"Content/"+filename, UriKind.Relative));
-
             StreamReader reader = new StreamReader(resource.Stream);
             //TODO: Add try parse.
             
@@ -40,7 +40,6 @@ namespace Felicitas
                 }
                 curRow++;
             }
-
         }
 
         private Tile GetTile(char c, int curCol, int curRow)
@@ -51,7 +50,6 @@ namespace Felicitas
                 default: return new BasicTile(curCol, curRow, Platformer.BasicTileTexture);
             }
         }
-
 
         public override void Draw()
         {

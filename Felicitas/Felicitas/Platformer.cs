@@ -31,9 +31,7 @@ namespace Felicitas {
 
         protected override void LoadContent()
         {
-
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            
             base.LoadContent();
         }
 
@@ -45,7 +43,10 @@ namespace Felicitas {
         protected override void Initialize()
         {
             Window.Title = "Felicitas";
+            //Load tile Textures here. Loading them in LoadContent was causing incorrect behavior, and the textures were not loading properly.
+            #region TileTextureInitialize
             BasicTileTexture = Content.Load<Texture2D>("basicTile.dds");
+            #endregion
             currentLevel = new FileGenerated();
             currentLevel.Generate("MAP.txt");
             base.Initialize();
@@ -54,6 +55,7 @@ namespace Felicitas {
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Red);
+            //Draw whichever level is currently being played.
             currentLevel.Draw();
             base.Draw(gameTime);
         }
