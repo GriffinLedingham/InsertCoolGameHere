@@ -17,6 +17,10 @@ namespace Felicitas {
 
         #endregion
 
+        #region Effects
+        Effect DrawTileEffect;
+        #endregion
+
         public GraphicsDeviceManager graphicsDeviceManager;
         public static SpriteBatch spriteBatch;
         public static Level currentLevel;
@@ -32,6 +36,9 @@ namespace Felicitas {
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
+
+            DrawTileEffect = Content.Load<Effect>(@"HLSL\DrawTiles.fxo");
+
             base.LoadContent();
         }
 
@@ -58,6 +65,16 @@ namespace Felicitas {
             //Draw whichever level is currently being played.
             //This will be changed when adding menus, multiple levels, etc..
             currentLevel.Draw();
+
+            /*
+            DrawTileEffect.Parameters["TileTexture"].SetResource(BasicTileTexture);
+            DrawTileEffect.Parameters["TileCount"].SetValue(1.0f);
+            DrawTileEffect.Parameters["TextureSize"].SetValue(new Vector2(BasicTileTexture.Width, BasicTileTexture.Height));
+            DrawTileEffect.Parameters["ImageSize"].SetValue(new Vector2(GraphicsDevice.BackBuffer.Width, GraphicsDevice.BackBuffer.Height));
+            DrawTileEffect.Parameters["TilePositions"].SetValue(new Vector2[]{new Vector2(50,50)});
+            
+            GraphicsDevice.DrawQuad(DrawTileEffect);
+            */
             base.Draw(gameTime);
         }
 
