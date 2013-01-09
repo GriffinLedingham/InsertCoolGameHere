@@ -31,12 +31,12 @@ namespace Felicitas
 
         public virtual void Draw()
         {
-            Platformer.spriteBatch.Begin();
+            //Platformer.spriteBatch.Begin();
             if (SpriteTexture != null)
             {
                 Platformer.spriteBatch.Draw(SpriteTexture, new Vector2(Width, Height) * Pos, Color.White);
             }
-            Platformer.spriteBatch.End();
+            //Platformer.spriteBatch.End();
         }
 
         public virtual bool CheckCollision(Player player)

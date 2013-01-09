@@ -1,4 +1,5 @@
-﻿using SharpDX;
+﻿using Microsoft.Xna.Framework.Input.Touch;
+using SharpDX;
 using SharpDX.Toolkit;
 using SharpDX.Toolkit.Graphics;
 using System;
@@ -10,7 +11,6 @@ using System.Threading.Tasks;
 namespace Felicitas {
     class Platformer : Game
     {
-
         #region Texture
 
         public static Texture2D BasicTileTexture;
@@ -23,11 +23,19 @@ namespace Felicitas {
         public static SpriteBatch spriteBatch;
         public static Level currentLevel;
         public static Player player;
+        public static double windowHeight, windowWidth;
 
         public Platformer()
         {
             graphicsDeviceManager = new GraphicsDeviceManager(this);
             graphicsDeviceManager.SynchronizeWithVerticalRetrace = false;
+
+            windowHeight = App.RootFrame.RenderSize.Width;
+            windowWidth = App.RootFrame.RenderSize.Height;
+
+            TouchPanel.EnabledGestures = GestureType.Flick;
+
+            graphicsDeviceManager.SupportedOrientations = DisplayOrientation.LandscapeRight;
 
             Content.RootDirectory = "Content";
         }
@@ -59,12 +67,17 @@ namespace Felicitas {
 
         protected override void Draw(GameTime gameTime)
         {
+            float camY,camX;
+
             GraphicsDevice.Clear(Color.Red);
-            //Draw whichever level is currently being played.
-            //This will be changed when adding menus, multiple levels, etc..
+
+            camY = -player.Pos.Y + ((float)windowHeight/2.0f);
+            camX = -player.Pos.X + ((float)windowWidth/2.0f);
+
+            spriteBatch.Begin(SpriteSortMode.BackToFront, null, null, null, null, null, Matrix.Translation(camX, camY-(5*player.SpriteTexture.Height), 0) * Matrix.RotationZ(1.57079633f));
             currentLevel.Draw();
-            
             player.Draw();
+            spriteBatch.End();
             
             base.Draw(gameTime);
         }
@@ -72,8 +85,8 @@ namespace Felicitas {
         protected override void Update(GameTime gameTime)
         {
             player.update();
+
             base.Update(gameTime);
         }
-
     }
 }

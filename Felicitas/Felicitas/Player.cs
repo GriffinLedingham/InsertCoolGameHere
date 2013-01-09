@@ -1,4 +1,5 @@
-﻿using SharpDX;
+﻿using Microsoft.Xna.Framework.Input.Touch;
+using SharpDX;
 using SharpDX.Toolkit.Content;
 using SharpDX.Toolkit.Graphics;
 using System;
@@ -15,6 +16,7 @@ namespace Felicitas
         public Texture2D SpriteTexture;
         float AccelerationY = -0.3f;
         bool Jumping = true;
+        bool LeftDown, RightDown;
 
         public Player(int x, int y, Texture2D texture)
         {
@@ -39,6 +41,46 @@ namespace Felicitas
         public void update()
         {
             //TODO: Add item checks.
+            if (TouchPanel.IsGestureAvailable)
+            {
+                GestureSample sample = TouchPanel.ReadGesture();
+                if (sample.GestureType == GestureType.Flick)
+                {
+                    if (sample.Delta.X > 0 && !Jumping)
+                    {
+                        AccelerationY = 1.3f;
+                    }
+                }
+            }
+
+            if (LeftDown)
+            {
+                Velocity.X -= .2f;
+            }
+            if (RightDown)
+            {
+                Velocity.X += .2f;
+            }
+
+            TouchCollection touchCollection = TouchPanel.GetState();
+            foreach (TouchLocation tl in touchCollection)
+            {
+                if ((tl.State == TouchLocationState.Pressed))
+                {
+                    if (tl.Position.Y < Platformer.windowWidth/2.0f)
+                    {
+                        LeftDown = true;
+                    }
+                    else
+                    {
+                        RightDown = true;
+                    }
+                }
+                else if (tl.State == TouchLocationState.Released)
+                {
+                    LeftDown = RightDown = false;
+                }
+            }
 
             bool noHit = true;
             for (int i = Platformer.currentLevel.Width - 1; i >= 0; i--)
@@ -130,13 +172,14 @@ namespace Felicitas
                     }
                 }
             }
+
         }
 
         public void Draw()
         {
-            Platformer.spriteBatch.Begin();
+            //Platformer.spriteBatch.Begin();
             Platformer.spriteBatch.Draw(SpriteTexture,Pos, Color.White);
-            Platformer.spriteBatch.End();
+            //Platformer.spriteBatch.End();
         }
     }
 }
