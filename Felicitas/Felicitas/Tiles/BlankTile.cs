@@ -22,7 +22,7 @@ namespace Felicitas
 
         public override bool CheckCollision(Player player)
         {
-            return true;
+            return false;
         }
         
     }

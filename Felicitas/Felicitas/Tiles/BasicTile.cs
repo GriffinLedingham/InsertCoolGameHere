@@ -28,10 +28,10 @@ namespace Felicitas
             float topA, topB;
             float bottomA, bottomB;
 
-            leftA = Pos.X;
-            rightA = Pos.X + SpriteTexture.Width;
-            topA = Pos.Y;
-            bottomA = Pos.Y + SpriteTexture.Height;
+            leftA = Pos.X * SpriteTexture.Width;
+            rightA = Pos.X * SpriteTexture.Width + SpriteTexture.Width;
+            topA = Pos.Y * SpriteTexture.Height;
+            bottomA = Pos.Y * SpriteTexture.Height + SpriteTexture.Height;
 
             leftB = player.Pos.X;
             rightB = player.Pos.X + player.SpriteTexture.Width;

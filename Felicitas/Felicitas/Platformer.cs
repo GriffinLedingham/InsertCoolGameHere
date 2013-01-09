@@ -22,6 +22,7 @@ namespace Felicitas {
         public GraphicsDeviceManager graphicsDeviceManager;
         public static SpriteBatch spriteBatch;
         public static Level currentLevel;
+        public static Player player;
 
         public Platformer()
         {
@@ -52,6 +53,7 @@ namespace Felicitas {
             #endregion
             currentLevel = new FileGenerated();
             currentLevel.Generate("MAP.txt");
+            player = new Player(10, 400, PlayerTexture);
             base.Initialize();
         }
 
@@ -61,7 +63,16 @@ namespace Felicitas {
             //Draw whichever level is currently being played.
             //This will be changed when adding menus, multiple levels, etc..
             currentLevel.Draw();
+            
+            player.Draw();
+            
             base.Draw(gameTime);
+        }
+
+        protected override void Update(GameTime gameTime)
+        {
+            player.update();
+            base.Update(gameTime);
         }
 
     }
