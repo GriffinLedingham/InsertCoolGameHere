@@ -12,7 +12,7 @@ namespace Felicitas
 {
     class Player
     {
-        public Vector2 Pos,Velocity;
+        public Vector2 Pos, Velocity;
         public Texture2D SpriteTexture;
         float AccelerationY = -0.3f;
         bool Jumping = true;
@@ -30,7 +30,7 @@ namespace Felicitas
             {
                 for (int j = Platformer.currentLevel.Height - 1; j >= 0; j--)
                 {
-                    while (Platformer.currentLevel.Tiles[i,j].CheckCollision(this))
+                    while (Platformer.currentLevel.Tiles[i, j].CheckCollision(this))
                     {
                         Pos.Y += 4;
                     }
@@ -41,15 +41,24 @@ namespace Felicitas
         public void update()
         {
             //TODO: Add item checks.
-            if (TouchPanel.IsGestureAvailable)
+            
+            TouchCollection touchCollection = TouchPanel.GetState();
+            foreach (TouchLocation tl in touchCollection)
             {
-                GestureSample sample = TouchPanel.ReadGesture();
-                if (sample.GestureType == GestureType.Flick)
+                if ((tl.State == TouchLocationState.Pressed))
                 {
-                    if (sample.Delta.X > 0 && !Jumping)
+                    if (tl.Position.Y < Platformer.windowWidth / 2.0f)
                     {
-                        AccelerationY = 1.3f;
+                        LeftDown = true;
                     }
+                    else
+                    {
+                        RightDown = true;
+                    }
+                }
+                else if (tl.State == TouchLocationState.Released)
+                {
+                    LeftDown = RightDown = false;
                 }
             }
 
@@ -62,23 +71,16 @@ namespace Felicitas
                 Velocity.X += .2f;
             }
 
-            TouchCollection touchCollection = TouchPanel.GetState();
-            foreach (TouchLocation tl in touchCollection)
+            if (TouchPanel.IsGestureAvailable)
             {
-                if ((tl.State == TouchLocationState.Pressed))
+                GestureSample sample = TouchPanel.ReadGesture();
+                if (sample.GestureType == GestureType.Flick)
                 {
-                    if (tl.Position.Y < Platformer.windowWidth/2.0f)
+                    if (sample.Delta.X > 0 && !Jumping)
                     {
-                        LeftDown = true;
+                        AccelerationY = 1.3f;
+                        Jumping = true;
                     }
-                    else
-                    {
-                        RightDown = true;
-                    }
-                }
-                else if (tl.State == TouchLocationState.Released)
-                {
-                    LeftDown = RightDown = false;
                 }
             }
 
@@ -178,7 +180,7 @@ namespace Felicitas
         public void Draw()
         {
             //Platformer.spriteBatch.Begin();
-            Platformer.spriteBatch.Draw(SpriteTexture,Pos, Color.White);
+            Platformer.spriteBatch.Draw(SpriteTexture, Pos, Color.White);
             //Platformer.spriteBatch.End();
         }
     }
